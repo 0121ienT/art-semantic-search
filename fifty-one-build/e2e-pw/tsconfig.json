@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "esModuleInterop": true,
+        "module": "commonjs",
+        "moduleResolution": "Node",
+        "noImplicitAny": true,
+        "lib": ["ES6", "dom", "dom.iterable"],
+        "types": ["node"],
+        "sourceMap": true,
+        "noEmit": true,
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true,
+        "baseUrl": ".",
+        "paths": {
+            "src": ["src"]
+        }
+    },
+    "include": ["src/**/*", "playwright.config.ts", "tsconfig.json"],
+    "exclude": ["node_modules"]
+}

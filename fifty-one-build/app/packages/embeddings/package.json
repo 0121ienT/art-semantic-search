@@ -1,0 +1,36 @@
+{
+    "name": "@fiftyone/embeddings",
+    "version": "0.0.0",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "watch": "nodemon --watch ./src --ext js,jsx,ts,tsx --exec 'yarn build'"
+    },
+    "files": [
+        "dist"
+    ],
+    "main": "src/index.ts",
+    "dependencies": {
+        "@fiftyone/aggregations": "*",
+        "@fiftyone/components": "*",
+        "@fiftyone/plugins": "*",
+        "@fiftyone/state": "*",
+        "plotly.js": "^3.0.1",
+        "use-resize-observer": "^9.0.2"
+    },
+    "devDependencies": {
+        "typescript": "^4.7.4",
+        "vite": "^5.4.12",
+        "vite-plugin-externals": "^0.5.0"
+    },
+    "fiftyone": {
+        "script": "dist/index.umd.js"
+    },
+    "packageManager": "yarn@3.2.1",
+    "peerDependencies": {
+        "@mui/icons-material": "*",
+        "react-error-boundary": "*",
+        "recoil": "*"
+    }
+}

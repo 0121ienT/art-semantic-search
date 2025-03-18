@@ -1,0 +1,16 @@
+node_modules/
+/test-results/
+/playwright-report/
+/playwright/.cache/
+.build
+
+.env.dev
+
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+coverage
+.snowpack
+yarn-error.log

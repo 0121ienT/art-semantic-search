@@ -1,0 +1,49 @@
+# Page redirects that will be automatically added to the built docs.
+#
+# Syntax:
+#
+#   from/broken/page1.ext to/existing/page1.ext
+#   from/broken/page2.ext to/existing/page2.ext
+#
+
+# Introduced in v2.7.0
+teams/data_lens.rst enterprise/data_lens.rst
+teams/data_quality.rst enterprise/data_quality.rst
+teams/query_performance.rst enterprise/query_performance.rst
+teams/api_connection.rst enterprise/api_connection.rst
+teams/cloud_media.rst enterprise/cloud_media.rst
+teams/dataset_versioning.rst enterprise/dataset_versioning.rst
+teams/teams_app.rst enterprise/app.rst
+teams/teams_plugins.rst enterprise/plugins.rst
+teams/installation.rst enterprise/installation.rst
+teams/management_sdk.rst enterprise/management_sdk.rst
+teams/migrations.rst enterprise/migrations.rst
+teams/overview.rst enterprise/overview.rst
+teams/roles_and_permissions.rst enterprise/roles_and_permissions.rst
+teams/secrets.rst enterprise/secrets.rst
+teams/index.rst enterprise/index.rst
+teams/pluggable_auth.md enterprise/pluggable_auth.md
+
+# Introduced in v1.0.0
+user_guide/brain.rst  brain.rst
+user_guide/dataset_zoo/index.rst  dataset_zoo/index.rst
+user_guide/dataset_zoo/datasets.rst  dataset_zoo/datasets.rst
+user_guide/dataset_zoo/api.rst  dataset_zoo/api.rst
+user_guide/model_zoo/index.rst  model_zoo/index.rst
+user_guide/model_zoo/models.rst  model_zoo/models.rst
+user_guide/model_zoo/api.rst  model_zoo/api.rst
+
+# Introduced in v0.7.4
+tutorials/label_mistakes.html  tutorials/classification_mistakes.html
+recipes/detection_mistakenness.html  tutorials/detection_mistakes.html
+recipes/model_inference.html  recipes/adding_classifications.html
+
+# Introduced in v0.7.0
+user_guide/dataset_creation/zoo.rst  user_guide/dataset_zoo/index.rst
+
+# Introduced in v0.4
+user_guide/dataset_creation/common_datasets.rst  user_guide/dataset_creation/datasets.rst
+
+# Introduced in v0.2
+examples/dataset_creation.rst  user_guide/dataset_creation/datasets.rst
+examples/index.rst  tutorials/index.rst
