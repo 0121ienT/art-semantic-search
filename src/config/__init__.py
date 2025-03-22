@@ -1,0 +1,1 @@
+from .config import data_setting, search_model_path, data_path

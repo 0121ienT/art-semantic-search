@@ -1,0 +1,1 @@
+from .clip_search import SearchModel
