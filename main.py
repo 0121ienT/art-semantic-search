@@ -2,7 +2,6 @@
 from fiftyone.core.session.session import Session
 from fiftyone.core.collections import SampleCollection
 # from src.data.data import Dataset
-
 import os
 os.environ["HF_HUB_ENABLE_HF_TRANSFER"] = "1"
 

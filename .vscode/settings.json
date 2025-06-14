@@ -84,5 +84,6 @@
   "files.associations": {
     "*.studiorc": "shellscript"
   },
-  "files.enableTrash": false
+  "files.enableTrash": false,
+  "wolf.disableHotModeWarning": true
 }
