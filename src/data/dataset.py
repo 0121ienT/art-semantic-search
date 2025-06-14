@@ -22,6 +22,12 @@ class Dataset:
         return self.dataset
 
     def similarity_computing(self) -> None:
+        brain_key = "clip_sim"
+
+        if brain_key in self.dataset.list_brain_runs():
+            print(f"Embeddings '{brain_key}' đã tồn tại. Bỏ qua tính toán lại.")
+            return
+        print("Computing similarity...")
         fob.compute_similarity(
             self.dataset,
             model="zero-shot-classification-transformer-torch",
