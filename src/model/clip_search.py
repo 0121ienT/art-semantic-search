@@ -27,3 +27,5 @@ class SearchModel:
                 method="umap", 
                 brain_key="clip_vis"
             )
+        
+        fob.compute_uniqueness(dataset, embeddings="clip_embeddings")

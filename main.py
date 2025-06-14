@@ -31,7 +31,7 @@ else:
     dataset.save()
     print("Dataset cached.")
 
-search_model: SearchModel = SearchModel(model_path=search_model_path, dataset=dataset)
+# search_model: SearchModel = SearchModel(model_path=search_model_path, dataset=dataset)
 
 print("Launching FiftyOne app...")
 session: Session = fo.launch_app(dataset=dataset)
