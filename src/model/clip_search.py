@@ -16,13 +16,13 @@ class SearchModel:
                 brain_key="clip_sim"
             )
     
-        fob.compute_similarity(
+        fob.compute_similarity( # Tính toán similarity cho tìm kiếm hình ảnh dữ liệu
                 dataset,
                 model="clip-vit-base32-torch",
                 brain_key="img_sim",
             )
 
-        fob.compute_visualization(dataset,
+        fob.compute_visualization(dataset, # Tính toán embedding theo umap để hiển thị biểu đồ
                 embeddings="clip_embeddings", 
                 method="umap", 
                 brain_key="clip_vis"

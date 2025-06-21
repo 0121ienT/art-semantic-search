@@ -10,18 +10,18 @@ class Dataset:
 
         self.dataset = None
 
-    def download(self) -> SampleCollection:
+    def download(self) -> SampleCollection: # Hàm tải dữ liệu xuống
         if self.dataset == None:
             self.dataset = fouh.load_from_hub(
                 repo_id=self.model_id,
-                format= self.metadata["format"],
+                format= self.metadata["format"], 
                 classification_fields=self.metadata["classification_fields"],
                 max_samples=self.metadata["max_samples"],
                 name=self.metadata["name"]
             )
         return self.dataset
 
-    def similarity_computing(self) -> None:
+    def similarity_computing(self) -> None: # Hàm tính toán similarity
         brain_key = "clip_sim"
 
         if brain_key in self.dataset.list_brain_runs():
@@ -37,7 +37,7 @@ class Dataset:
             batch_size=32,
         )
 
-    def label(self, collumn) -> tuple[None, ...] | list[Any] | list[None] | None:
+    def label(self, collumn) -> tuple[None, ...] | list[Any] | list[None] | None: # Hàm in ra các label
         try:
             return self.dataset.distinct(f"{collumn}.label")
         except Exception as e:
